@@ -1,0 +1,43 @@
+# Finder
+alias ll="ls -alGh"
+alias ..="cd .."
+
+# Bash
+alias reload="source ~/bin/dotfiles/bash/aliases"
+alias ea="mvim ~/bin/dotfiles/bash/aliases && reload"
+
+# Brew
+alias bu="brew update && brew doctor && brew outdated"
+
+#Bundle
+alias b="bundle"
+alias be="b exec"
+alias bi="b install"
+
+# Vim
+# alias vim="mvim"
+alias vi="vim"
+
+# Hostfile
+alias f='dscacheutil -flushcache'
+
+# Rails
+alias rs="rails s"
+alias rc="rails c"
+alias rmig="rake db:migrate"
+alias remigrate="rake db:drop && rake db:create && rake db:migrate && rake db:seed && rake db:test:prepare"
+
+# Git
+alias g="git status"
+alias gd="git diff"
+alias gb="git branch"
+alias gco="git checkout"
+
+# Onemob
+pg_restore --verbose --clean --no-acl --no-owner -h localhost -U jeremy -d onevid latest.dump
+
+
+# Commit pending changes and quote all args as message
+function gg() {
+  git commit -v -a -m "$*"
+}

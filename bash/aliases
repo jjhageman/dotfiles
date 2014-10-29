@@ -34,7 +34,7 @@ alias gb="git branch"
 alias gco="git checkout"
 
 # Onemob
-pg_restore --verbose --clean --no-acl --no-owner -h localhost -U jeremy -d onevid latest.dump
+alias om_import="pg_restore --verbose --clean --no-acl --no-owner -h localhost -U jeremy -d onevid latest.dump"
 
 
 # Commit pending changes and quote all args as message

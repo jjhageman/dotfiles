@@ -4,6 +4,7 @@ syntax on
 set number              " precede each line with its line number
 set numberwidth=3       " number of culumns for line numbers
 set textwidth=0         " Do not wrap words (insert)
+set wrapmargin=0        " Do not wrap words (insert)
 set nowrap              " Do not wrap words (view)
 set showcmd             " Show (partial) command in status line.
 set showmatch           " Show matching brackets.
@@ -50,3 +51,4 @@ set ttimeoutlen=50      "fast Esc to normal mode
 set mouse=niv "or set mouse=a
 set clipboard=unnamed
 set mousehide           " Hide mouse pointer on insert mode."
+"set mousefocus

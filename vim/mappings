@@ -1,3 +1,9 @@
 map <C-n> :NERDTreeToggle<CR>
 
 nnoremap - :Switch<cr>
+
+map <F6> <C-W>w
+map <C-k> <C-W><C-UP>
+map <C-j> <C-W><C-DOWN>
+map <C-h> <C-W><C-LEFT>
+map <C-l> <C-W><C-RIGHT>

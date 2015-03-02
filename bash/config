@@ -51,6 +51,7 @@ function parse_git_branch {
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/[\1$(parse_git_dirty)]/"
 }
 
+export EDITOR="mvim -f"
 PS1="\[$GREEN\]\n\u \[$ECYAN\]\w \[$EWHITE\]\$(parse_git_branch) \n→ \[$NO_COLOR\]"
 export MYSQL_PS1="\\d@\\h> "
 export CLICOLOR=1
